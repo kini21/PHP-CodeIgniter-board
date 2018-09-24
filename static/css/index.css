@@ -1,0 +1,188 @@
+@import url(http://api.mobilis.co.kr/webfonts/css/?fontface=NanumGothicWeb);
+@import url(http://weloveiconfonts.com/api/?family=entypo|fontawesome|zocial|iconicstroke);
+/* 웹 아이콘 폰트 사용 */
+
+@font-face {
+    font-family: 'Goyang';
+    src: url('/fonts/Goyang.off')
+}
+
+@font-face {
+    font-family: 'Goyang';
+    src: url('/fonts/Goyang.ttf')
+}
+
+* {
+    font-family: 'Goyang', sans-serif,  !important;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none
+}
+
+#header .box {
+    float: left;
+    border: 1px #c9c9c9 solid;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: 1px 1px 10px #7f7f7f;
+}
+
+#header .box .header_title {
+    font-size: 15px;
+    margin-top: 18px;
+    margin-left: 300px
+}
+
+#header ul.search {
+    float: right;
+    margin-top: -10px;
+    margin-right: 50px
+}
+
+#header ul.search li {
+    padding-left: 50px;
+    list-style: none;
+    float: left
+}
+
+#left {
+    position: relative;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+}
+
+#left .h-div-two {
+    position: relative;
+    color: black;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0px 1px 10px #7f7f7f;
+}
+
+#left .h-div-two .center {
+    padding-top: 33%;
+    text-align: center
+}
+
+#left .h-div-two .logo {
+    position: absolute;
+    top: -15px;
+    left: -30px;
+}
+
+#left .h-div-two .language {
+    font-size: 18pt;
+    position: relative;
+    margin-top: 44%;
+    background-color: white;
+    line-height: auto;
+    padding-bottom: 25px;
+    box-shadow: 5px 0 10px -5px #7f7f7f;
+}
+
+#left .h-div-two h3 {
+    position: relative;
+    top: 30px;
+    margin-left: 30px;
+    text-align: left;
+    cursor: pointer
+}
+
+#left .h-div-two .language ul {
+    margin-top: -30px
+}
+
+#left .h-div-two .language ul li {
+    position: relative;
+    top: 30px;
+    margin-left: 30px;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+#left .h-div-two ul li a {
+    color: #545454
+}
+
+#contents {
+    position: relative;
+    float: right;
+    width: 70%;
+    margin-right: 9%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form.insert_form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.d6 {
+    background: white;
+}
+
+.d6 form {
+    height: 30px;
+}
+
+.d6 input {
+    height: 100%;
+    width: 0;
+    padding: 0 42px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 15px
+}
+
+.d6 input:focus {
+    /*돋보기 클릭시 밑에 바 생기는거*/
+    width: 300px;
+    z-index: 1;
+    border-bottom: 2px solid black;
+}
+
+.d6 button {
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: -3px;
+    right: 0;
+    cursor: pointer;
+}
+
+.d6 button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: black;
+}
+
+.test { height: 150px;
+    width: 300px;
+    margin: 20px;
+     }
