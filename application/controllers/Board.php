@@ -135,6 +135,10 @@ class Board extends MY_Controller {
 		$config['first_url'] = $config['base_url'] . $config['suffix'];
 		
 		$replyLists['cnt'] = $this->Board_model->replyLists($board_id, 'count');
+
+		if($replyLists['cnt'] == NULL){
+			redirect('/');
+		}
 		
 		$config['total_rows'] = $replyLists['cnt'];
         $config['per_page'] = 10;
