@@ -621,5 +621,5 @@
             <button type="submit" style="cursor:pointer"></button>
         </form>
     </div>
-    <span class="ico entypo-user" onclick="location.href='./admin'"></span>
+    <span class="ico entypo-user" onclick="location.href='/Admin_board/index'"></span>
 </header>

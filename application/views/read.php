@@ -71,4 +71,3 @@ function delete_article()
         </tr>
     </table>
    </form>
-   

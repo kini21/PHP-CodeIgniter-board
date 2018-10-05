@@ -1,0 +1,98 @@
+.home_box {
+    width: calc(100% - 20px);
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    padding: 10px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.home_box_title {
+    font-size: 12pt;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #6678b1;
+    color: #669;
+}
+
+.home_box_contents {
+    width: 265px;
+    color: #6678b1;
+    float: left;
+}
+
+.home_box_contents .list {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.home_box_contents .tl {
+    text-align: left;
+}
+
+.home_box_contents .tc {
+    text-align: center;
+}
+
+.home_box_contents .tr {
+    text-align: right;
+}
+
+.home_box_contents .btn {
+    background-color: #6678b1;
+    color: #FFF;
+    margin-bottom: 2px;
+}
+
+.home_box_contents .btn:hover {
+    background-color: #44D;
+}
+
+.home_box_button {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+}
+
+.home_box_button .btn {
+    background-color: #6678b1;
+    color: #FFF;
+    margin-bottom: 5px;
+}
+
+.home_box_button .btn:hover {
+    background-color: #44D;
+}
+
+.ico {
+    width: 30px;
+    height: 100%;
+    background: none;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    font-family: 'entypo', 'fontawesome', 'zocial', 'iconicstroke', sans-serif;
+    font-size: 16pt;
+    text-align: center;
+    display: inline-block;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.home_box_contents input[type=file] {
+    display: none;
+}
+
+.home_box_contents2 {
+    width: calc(100% - 285px);
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: 10px;
+    float: left;
+}

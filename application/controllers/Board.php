@@ -135,13 +135,9 @@ class Board extends MY_Controller {
 		$config['first_url'] = $config['base_url'] . $config['suffix'];
 		
 		$replyLists['cnt'] = $this->Board_model->replyLists($board_id, 'count');
-
-		if($replyLists['cnt'] == NULL){
-			redirect('/');
-		}
 		
 		$config['total_rows'] = $replyLists['cnt'];
-        $config['per_page'] = 10;
+        $config['per_page'] = 15;
 		$config['uri_segment'] = 5;
 
 		foreach ($this->config->item('pagination') as $key => $value)
@@ -239,6 +235,12 @@ class Board extends MY_Controller {
 	
 	public function delete()
 	{
+		$cnt = $this->Board_model->replyLists($this->input->post('board_id'), 'count2');
+		
+		if($cnt > 0){
+			$re_result = $this->Board_model->reply_delete('', $this->input->post('board_id'));
+		}
+
 		$result = $this->Board_model->delete($this->input->post('board_id'));
 		if($result == TRUE) redirect('/Board/contentLists/'.$this->input->post('sub_category_id').'?category_name='.$this->input->post('category_name').'&sub_category_name='.$this->input->post('sub_category_name'));
 	}
@@ -314,11 +316,5 @@ class Board extends MY_Controller {
 	{
 		$result = $this->Board_model->reply_delete($this->input->post('reply_id'));
 		if($result == TRUE) redirect('/Board/read/'.$this->input->post('sub_category_id'). '/' .$this->input->post('board_id').'?category_name='.$this->input->post('category_name').'&sub_category_name='.$this->input->post('sub_category_name'));
-	}
-
-	public function reply_readmore($loaded_replys)
-	{
-		$result['list'] = $this->Board_model->replyLists($this->input->get('board_id'),'',$loaded_replys);
-		echo json_encode($result);
 	}
 }

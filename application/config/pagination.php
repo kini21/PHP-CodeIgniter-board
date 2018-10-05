@@ -20,3 +20,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		'num_tag_open'			=> '<li class="page-item">',
 		'num_tag_close'			=> '</li>'
 	];
+
+	$config['pagination2']	= [
+		'full_tag_open'         => '<span class="paging_span">',
+		'full_tag_close'        => '</span>',
+		'first_tag_open'  		=> '<span class="paging_span">',
+		'first_link'			=> '&lt;&lt;',
+		'first_tag_close'		=> '</span>',
+		'last_tag_open'			=> '<span class="paging_span">',
+		'last_link'				=> '&gt;&gt;',
+		'last_tag_close'		=> '</span>',
+		'prev_tag_open'			=> '<span class="paging_span">',
+		'prev_link'				=> '&lt;',
+		'prev_tag_close'		=> '</span>',
+		'next_tag_open'			=> '<span class="paging_span">',
+		'next_link'				=> '&gt;',
+		'next_tag_close'		=> '</span>',
+		'cur_tag_open'          => '<span class="paging_span now">',
+		'cur_tag_close'         => '</span>',
+		'num_tag_open'			=> '<span class="paging_span">',
+		'num_tag_close'			=> '</span>'
+	];
